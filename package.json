@@ -1,0 +1,25 @@
+{
+  "name": "learn_nodejs",
+  "version": "1.0.0",
+  "description": "> nodejs 本身就是一个单进程、单线程的应用程序，由于V8引擎提供了异步执行回调的接口。它通过这些接口处理大的并发请求，且性能很高",
+  "main": "buffer.js",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "express": "^4.18.1",
+    "inquirer": "^8.2.4",
+    "progress": "^2.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chy9610/learn-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chy9610/learn-nodejs/issues"
+  },
+  "homepage": "https://github.com/chy9610/learn-nodejs#readme"
+}
