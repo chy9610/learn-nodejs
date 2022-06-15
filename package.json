@@ -4,13 +4,18 @@
   "description": "> nodejs 本身就是一个单进程、单线程的应用程序，由于V8引擎提供了异步执行回调的接口。它通过这些接口处理大的并发请求，且性能很高",
   "main": "buffer.js",
   "dependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/ora": "^3.2.0",
     "chalk": "^5.0.1",
     "express": "^4.18.1",
     "inquirer": "^8.2.4",
+    "minimist": "^1.2.6",
+    "ora": "^6.1.0",
     "progress": "^2.0.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run dev",
+    "test": "npm run test"
   },
   "repository": {
     "type": "git",
