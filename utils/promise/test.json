@@ -1,0 +1,8 @@
+{
+  "name": "测试",
+  "data": {
+    "test": "路径测试"
+  },
+  "status": 200,
+  "statusTexts": "OK"
+}
