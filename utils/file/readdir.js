@@ -60,21 +60,38 @@ const isFile = (fileName) => {
 // fs.rmSync() // 同步
 
 
+// 完整化文件路径
+const filePullPath = (filePrefix, files) => files.map(fileName => path.join(filePrefix, fileName))
 
 // 读取测试文件夹，删除其中全部内容（递归删除）
-const folderRm = (folder) => {
-    const fileTest = fs.readdirSync(folder);
-    fileTest.forEach(fileName => {
-        let filePath = path.join(folder, fileName);
-        if (fs.lstatSync(filePath).isFile()) {
-            fs.rmSync(filePath)
-        } else {
-            folderRm(filePath)
+const folderRm = (filePath) => {
+    // 命令式删除当前目录及以下文件
+    // fs.rmSync(filePath, { force: true, recursive: true })
+    // return
+
+    const file = fs.lstatSync(filePath);
+    // 判断是否为目录
+    if (file.isDirectory()) {
+        // 读取目录
+        const fileTest = filePullPath(filePath, fs.readdirSync(filePath));
+
+        // 判断目录是否存在
+        if (Array.isArray(fileTest)) {
+            // 只有单纯目录时，删除目录
+            if (fileTest.length === 0) {
+                fs.rmdirSync(filePath)
+            }
+
+            // 遍历目录
+            fileTest.forEach(fileItem => {
+                folderRm(fileItem)
+            })
         }
-    })
-    
-    if (fs.lstatSync(filePath).isDirectory()) {
-        fs.unlink(folder)
     }
+    
+    if (file.isFile()) {
+        fs.unlinkSync(filePath)
+    }
+
 }
-folderRm('./test-sub')
+folderRm('./test')
