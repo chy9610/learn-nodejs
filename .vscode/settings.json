@@ -1,7 +1,24 @@
 {
     "cSpell.words": [
         "argvs",
+        "colorbox",
+        "cowsay",
+        "extname",
+        "fchmod",
+        "fchown",
+        "fstats",
+        "ftruncate",
+        "futimes",
+        "lchmod",
+        "lchown",
+        "lstats",
+        "mkdir",
+        "readdir",
+        "readlink",
+        "realpath",
         "supervisord",
-        "todos"
+        "todos",
+        "unwatch",
+        "utimes"
     ]
 }
