@@ -54,8 +54,8 @@ npm run build:mp-app-plugin
 
 ### **3、开发**
 
-![img](http://activity.cmcc-cs.cn/chop/res/prd-ngmc1/product/product/265d9fb1a67c420c8b96ac42fcfa1691.png)![img](http://activity.cmcc-cs.cn/chop/res/prd-ngmc1/product/product/c3c90c09247c4a508179a3cba86043be.png)    
-
+![img](http://activity.cmcc-cs.cn/chop/res/prd-ngmc1/product/product/265d9fb1a67c420c8b96ac42fcfa1691.png)
+![img](http://activity.cmcc-cs.cn/chop/res/prd-ngmc1/product/product/c3c90c09247c4a508179a3cba86043be.png)    
 ![img](http://activity.cmcc-cs.cn/chop/res/prd-ngmc1/product/product/7853aa14bd4944499a393c0d086e0c97.png) 
 
 #### **3.1、环境**
